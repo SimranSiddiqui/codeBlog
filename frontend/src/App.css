@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato+Sans');
+
+body{
+font-family: 'Lato Sans', cursive;
+}
+
+header{
+  background-color: #D3D3D3;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.navbar__navigation{
+  margin-left: 80%;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer{
+  background-color: #D3D3D3;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__content{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.left{
+  align-items: left;
+  justify-content: left;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 60%;
+  margin-top: 10px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__column{
+  margin-bottom: 10px;
+}
+
+.footer__item{
+  margin-right: 20px;
+}
+.old-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.new-entry{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.navbar__navigation-item{
+  margin-right: 20px;
+}
+
+button{
+  background-color: aqua;
+  float: right;
+  height: 30px;
+  width: 80px;
+}
+
+textarea{
+  background-color: #D3D3D3;
+  border: none;
+}
+
+h2{
+  display: inline;
+  
+}
