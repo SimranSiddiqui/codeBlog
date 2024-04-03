@@ -2,12 +2,11 @@ import express from "express";
 import {Blog} from '../models/blogModel.js';
 const router = express.Router();
 
-
-router.app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.json({ message: "Hello from server!" });
 });
 
-router.app.post('/blog', (req, res) => {
+router.post('/new', (req, res) => {
     try {
         if(!req.body.title || !req.body.blogpost){
             return res.status(400).send({
@@ -30,7 +29,7 @@ router.app.post('/blog', (req, res) => {
     }
 });
 
-router.app.get('/blogs', async (req, res) =>{
+router.get('/blogs', async (req, res) =>{
     try {
         const blogs = await Blog.find({});
 
