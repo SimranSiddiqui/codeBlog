@@ -21,6 +21,11 @@ function App() {
           element={<EditPost submit = "Create New Post"
           heading = "New Post"/>}
         />
+        <Route
+          path="/edit"
+          element={<EditPost submit = "Save Changes"
+          heading = "Edit Post"/>}
+        />
       </Routes>
     </Router>
   );

@@ -1,18 +1,18 @@
 import mongoose from "mongoose";
 
-const blogSchema = mongoose.Schema(
+const bookSchema = mongoose.Schema(
     {
-        title: 
+        bookTitle: 
         {
             type: String,
             required: true
         },
-        blogContent:
+        issueDate:
         {
             type: String,
             required: true
         },
-        datePosted: 
+        datePublished: 
         {
             type: Date,
             required: true

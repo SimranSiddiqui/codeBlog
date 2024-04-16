@@ -6,6 +6,10 @@ let res = await axios.get("http://localhost:5000/blogs");
 console.log(res.data.data[0]);
 let posts = res.data.data;
 
+function handleDelete(){
+  
+}
+
 function Home2() {
   return (
     <div className="container">
@@ -17,8 +21,10 @@ function Home2() {
             <h2>{post.title}</h2>
             <small>{post.datePosted}</small>
             <p>{post.blogContent}</p>
-            <a className="edit" href={`/edit/${post.id}`}>Edit</a>
-            <a className="delete" href={`/api/posts/delete/${post.id}`}>Delete</a>
+            <a className="edit" href="/edit">Edit</a>
+            <a className="delete" href={`http://localhost:5000/${post.id}`}
+            onClick={handleDelete}
+            >Delete</a>
           </li>
         ))}
       </ul>
